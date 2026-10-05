@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9104c4e6-b1c7-473d-905a-1bccf8bfd6f0" name="Changes" comment="Other stuff">
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/estimation/huawei_bridge.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_huawei_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9104c4e6-b1c7-473d-905a-1bccf8bfd6f0" name="Changes" comment="Finalizing Huawei repo copy">
+      <change afterPath="$PROJECT_DIR$/external/marl_bess/PROVENANCE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/marl_bess/aggregation_value.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/marl_bess/degradation_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/marl_bess/fleet_coupling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/marl_bess/flexibility_market.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/marl_bess/italian_market_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/marl_bess/market_constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/marl_bess/marl_milp_continuous.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/external/marl_bess/milp_optimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/soc2market.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/soc2market.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,17 +59,17 @@
     "Python tests.pytest for test_huawei_regression.test_model_reproduces_published_soc.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/lorenzo.giannuzzo/PycharmProjects/soc2market",
+    "last_opened_file_path": "C:/Users/lorenzo.giannuzzo/PycharmProjects/soc2market/external/marl_bess",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\external\marl_bess" />
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\data\market" />
       <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market" />
       <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\tests" />
       <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\src\soc2market\estimation" />
-      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\data\private\soc_regression" />
-      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\data\private\huawei_workdir\data" />
     </key>
   </component>
   <component name="RunManager" selected="Python tests.pytest for test_huawei_regression.test_model_reproduces_published_soc">
@@ -147,13 +153,22 @@
       <option name="project" value="LOCAL" />
       <updated>1791207505123</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finalizing Huawei repo copy">
+      <option name="closed" value="true" />
+      <created>1791211756022</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1791211756022</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial project structure" />
     <MESSAGE value="Add XXXXX SOC estimator code (frozen copy)" />
     <MESSAGE value="Other stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Other stuff" />
+    <MESSAGE value="Finalizing Huawei repo copy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizing Huawei repo copy" />
   </component>
 </project>
