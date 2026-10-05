@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9104c4e6-b1c7-473d-905a-1bccf8bfd6f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/soc2market.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/bidding/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/errormodel/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/estimation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/figures/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/plant/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/simulation/__init__.py" afterDir="false" />
+    <list default="true" id="9104c4e6-b1c7-473d-905a-1bccf8bfd6f0" name="Changes" comment="Other stuff">
+      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/soc2market/estimation/huawei_bridge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_huawei_regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LorenzoGiannuzzo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LorenzoGiannuzzo/soc2market.git",
+    "accountId": "bf46d7ae-b586-47fc-a5e9-9909db8e3d89"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -47,10 +49,64 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.pytest for test_huawei_regression.test_ekf_reproduces_published_soc.executor": "Run",
+    "Python tests.pytest for test_huawei_regression.test_model_reproduces_published_soc.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/lorenzo.giannuzzo/PycharmProjects/soc2market",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market" />
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\tests" />
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\src\soc2market\estimation" />
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\data\private\soc_regression" />
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\data\private\huawei_workdir\data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest for test_huawei_regression.test_model_reproduces_published_soc">
+    <configuration name="pytest for test_huawei_regression.test_ekf_reproduces_published_soc" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_huawei_regression.test_ekf_reproduces_published_soc&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_huawei_regression.test_model_reproduces_published_soc" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-m slow&quot;" />
+      <option name="_new_target" value="&quot;test_huawei_regression.test_model_reproduces_published_soc&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_huawei_regression.test_ekf_reproduces_published_soc" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,6 +123,37 @@
       <option name="presentableId" value="Default" />
       <updated>1791204890598</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial project structure">
+      <option name="closed" value="true" />
+      <created>1791205473512</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1791205473512</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add XXXXX SOC estimator code (frozen copy)">
+      <option name="closed" value="true" />
+      <created>1791206362348</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1791206362348</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Other stuff">
+      <option name="closed" value="true" />
+      <created>1791207505123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1791207505123</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial project structure" />
+    <MESSAGE value="Add XXXXX SOC estimator code (frozen copy)" />
+    <MESSAGE value="Other stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Other stuff" />
   </component>
 </project>
