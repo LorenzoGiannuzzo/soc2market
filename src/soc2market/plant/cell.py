@@ -147,7 +147,7 @@ class _Lut:
         return arr[i] + w * (arr[i + 1] - arr[i])
 
 
-def simulate(params, dt, state, *, current_a=None, power_w=None):
+def simulate(params, dt, state, *, current_a=None, power_w=None, soc_limits=(0.0, 1.0)):
     """
     Simulate the cell for a sequence of steps, driven either by current (A) or by power (W).
 
@@ -156,6 +156,8 @@ def simulate(params, dt, state, *, current_a=None, power_w=None):
     whose current would push the voltage above v_max or the SOC above 1 while charging, or
     below v_min or 0 while discharging, is refused: the current is set to zero and the step
     is flagged in `refused`. A step that moves back towards the window is always allowed.
+    `soc_limits` narrows the SOC window to the operating range enforced by the energy
+    management system (the physical range of the cell is [0, 1]).
     """
     if (current_a is None) == (power_w is None):
         raise ValueError("give exactly one of current_a or power_w")
@@ -206,8 +208,8 @@ def simulate(params, dt, state, *, current_a=None, power_w=None):
         else:
             v_try = e + r0 * current
             soc_try = soc + eff * current * step / q_as
-            blocked_up = current > 0 and (v_try > params.v_max or soc_try > 1.0)
-            blocked_dn = current < 0 and (v_try < params.v_min or soc_try < 0.0)
+            blocked_up = current > 0 and (v_try > params.v_max or soc_try > soc_limits[1])
+            blocked_dn = current < 0 and (v_try < params.v_min or soc_try < soc_limits[0])
             ok = not (blocked_up or blocked_dn)
         if not ok:
             refused[k] = True

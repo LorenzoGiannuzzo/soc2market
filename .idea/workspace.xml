@@ -5,17 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9104c4e6-b1c7-473d-905a-1bccf8bfd6f0" name="Changes" comment="Finalizing Huawei repo copy">
-      <change afterPath="$PROJECT_DIR$/external/marl_bess/PROVENANCE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/marl_bess/aggregation_value.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/marl_bess/degradation_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/marl_bess/fleet_coupling.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/marl_bess/flexibility_market.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/marl_bess/italian_market_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/marl_bess/market_constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/marl_bess/marl_milp_continuous.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/external/marl_bess/milp_optimizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/soc2market.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/soc2market.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/07_check_ekf_sign.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/09_convert_frequency.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/10_generate_duty_cycles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/11_run_estimators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/12_diagnose_estimator_spikes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/13_error_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/14_validate_error_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/15_market_study.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/16_market_sensitivity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/17_margin_sweep.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/18_sweep_diagnostics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/19_paper_figures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/soc2market/bidding/schedule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/soc2market/paths.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/duty_cycle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/execution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/frequency.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/msd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/profile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/soc2market/simulation/market.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_market.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_msd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/soc_estimators/PROVENANCE.md" beforeDir="false" afterPath="$PROJECT_DIR$/external/soc_estimators/PROVENANCE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/soc2market/plant/cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/soc2market/plant/cell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/soc2market/plant/sensors.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/soc2market/plant/sensors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_plant.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_plant.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,21 +49,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "LorenzoGiannuzzo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LorenzoGiannuzzo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/LorenzoGiannuzzo/soc2market.git",
-    "accountId": "bf46d7ae-b586-47fc-a5e9-9909db8e3d89"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LorenzoGiannuzzo/soc2market.git&quot;,
+    &quot;accountId&quot;: &quot;bf46d7ae-b586-47fc-a5e9-9909db8e3d89&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="3KHC1SWNa5XMgF7dU0Hu2X6R1EA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -57,22 +74,232 @@
   "keyToString": {
     "Python tests.pytest for test_huawei_regression.test_ekf_reproduces_published_soc.executor": "Run",
     "Python tests.pytest for test_huawei_regression.test_model_reproduces_published_soc.executor": "Run",
+    "Python tests.pytest in test_market.py.executor": "Run",
+    "Python tests.pytest in test_msd.py.executor": "Run",
+    "Python tests.pytest in test_signals.py.executor": "Run",
+    "Python.10_generate_duty_cycles.executor": "Run",
+    "Python.11_run_estimators.executor": "Run",
+    "Python.13_error_model.executor": "Run",
+    "Python.14_validate_error_generator.executor": "Run",
+    "Python.15_market_study.executor": "Run",
+    "Python.16_market_sensitivity.executor": "Run",
+    "Python.17_margin_sweep.executor": "Run",
+    "Python.18_sweep_diagnostics.executor": "Run",
+    "Python.19_paper_figures.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/lorenzo.giannuzzo/PycharmProjects/soc2market/external/marl_bess",
+    "last_opened_file_path": "C:/Users/lorenzo.giannuzzo/PycharmProjects/soc2market/scripts",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\external\marl_bess" />
-      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\data\market" />
-      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market" />
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\scripts" />
       <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\tests" />
-      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\src\soc2market\estimation" />
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\src\soc2market\signals" />
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\src\soc2market" />
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\src\soc2market\simulation" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_huawei_regression.test_model_reproduces_published_soc">
+  <component name="RunManager" selected="Python.19_paper_figures">
+    <configuration name="10_generate_duty_cycles" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/10_generate_duty_cycles.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="11_run_estimators" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/11_run_estimators.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="13_error_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/13_error_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="14_validate_error_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/14_validate_error_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="15_market_study" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/15_market_study.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="16_market_sensitivity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/16_market_sensitivity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="17_margin_sweep" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/17_margin_sweep.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="18_sweep_diagnostics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/18_sweep_diagnostics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="19_paper_figures" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/19_paper_figures.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_huawei_regression.test_ekf_reproduces_published_soc" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="soc2market" />
       <option name="ENV_FILES" value="" />
@@ -107,8 +334,71 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_market.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_market.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_msd.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_msd.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_signals.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_signals.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.19_paper_figures" />
+        <item itemvalue="Python.18_sweep_diagnostics" />
+        <item itemvalue="Python.17_margin_sweep" />
+        <item itemvalue="Python.16_market_sensitivity" />
+        <item itemvalue="Python.15_market_study" />
+        <item itemvalue="Python.14_validate_error_generator" />
+        <item itemvalue="Python.13_error_model" />
+        <item itemvalue="Python.11_run_estimators" />
+        <item itemvalue="Python.10_generate_duty_cycles" />
+        <item itemvalue="Python tests.pytest in test_msd.py" />
+        <item itemvalue="Python tests.pytest in test_signals.py" />
+        <item itemvalue="Python tests.pytest in test_market.py" />
         <item itemvalue="Python tests.pytest for test_huawei_regression.test_ekf_reproduces_published_soc" />
       </list>
     </recent_temporary>

@@ -21,10 +21,36 @@ class SensorSpec:
     voltage_resolution_v: float = 0.001
     temperature_noise_c: float = 0.1
     temperature_resolution_c: float = 0.1
+    current_resolution_a: float = 0.0
 
     @classmethod
     def ideal(cls):
-        return cls(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+        return cls(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+
+    @classmethod
+    def matched_to(cls, reference, resolution_v=1e-4, resolution_a=1e-4):
+        """
+        Measurement chain matched to the acquisition of the estimators' training data: the
+        resolution of the laboratory records (0.1 mV, 0.1 mA) and random noise estimated from a
+        reference record, without offset or gain errors (invisible in those records, because their
+        reference SOC is counted from the same measured current).
+        """
+        return cls(current_offset_a=0.0, current_gain_error=0.0,
+                   current_noise_a=robust_noise(reference["Current_inv"].to_numpy(float)),
+                   voltage_noise_v=robust_noise(reference["Voltage"].to_numpy(float)),
+                   voltage_resolution_v=resolution_v, current_resolution_a=resolution_a,
+                   temperature_noise_c=0.0, temperature_resolution_c=0.1)
+
+
+def robust_noise(x):
+    """
+    White-noise standard deviation from first differences, robust to the steps of the signal:
+    sigma = 1.4826 * MAD(dx) / sqrt(2).
+    """
+    dx = np.diff(np.asarray(x, float))
+    dx = dx[np.isfinite(dx)]
+    mad = np.median(np.abs(dx - np.median(dx)))
+    return float(1.4826 * mad / np.sqrt(2.0))
 
 
 def _quantise(x, resolution):
@@ -47,7 +73,7 @@ def measure(result, spec, rng):
     voltage = result.voltage_v + noise(spec.voltage_noise_v)
     temp = result.temp_c + noise(spec.temperature_noise_c)
     return pd.DataFrame({
-        "Current_inv": current,
+        "Current_inv": _quantise(current, spec.current_resolution_a),
         "Voltage": _quantise(voltage, spec.voltage_resolution_v),
         "Temp": _quantise(temp, spec.temperature_resolution_c),
         "SOC_true": result.soc * 100.0,

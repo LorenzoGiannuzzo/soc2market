@@ -21,3 +21,8 @@ Uncommitted changes in source at copy time: no
 
 ## Local modifications
 None.
+
+- KalmanFilter_module_all_data: the measurement model predicts V = OCV - R0*I - V1 - V2 with
+  positive current charging the cell, whereas the HPPC data follow V = OCV + R0*I + V1 + V2
+  (scripts/07_check_ekf_sign.py: RMSE 28 vs 61 mV in charge, 51 vs 130 mV in discharge).
+  Kept as published; the study evaluates the estimators without modification.

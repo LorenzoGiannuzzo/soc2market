@@ -176,3 +176,17 @@ def test_slow_branch_fit_recovers_known_values():
     assert fit["r3"] == pytest.approx(1.5e-4, rel=1e-3)
     assert fit["tau3_s"] == pytest.approx(200.0, rel=1e-3)
     assert fit["rmse_after_mv"] < 1e-3
+
+
+def test_matched_sensor_chain_quantises_and_estimates_noise():
+    from soc2market.plant.sensors import robust_noise
+    rng = np.random.default_rng(3)
+    x = np.repeat([0.0, 100.0, -50.0], 20000) + rng.normal(0.0, 0.01, 60000)
+    assert robust_noise(x) == pytest.approx(0.01, rel=0.05)
+    ref = pd.DataFrame({"Current_inv": x, "Voltage": 3.3 + rng.normal(0.0, 1e-4, 60000)})
+    spec = SensorSpec.matched_to(ref)
+    assert spec.current_offset_a == 0.0 and spec.current_gain_error == 0.0
+    res = simulate(synthetic_params(), 1.0, CellState(soc=0.5), current_a=np.full(50, 12.345678))
+    table = measure(res, spec, np.random.default_rng(0))
+    assert np.allclose(table["Current_inv"] * 1e4, np.round(table["Current_inv"] * 1e4))
+    assert np.allclose(table["Voltage"] * 1e4, np.round(table["Voltage"] * 1e4))
