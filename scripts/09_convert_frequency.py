@@ -8,7 +8,7 @@ import numpy as np
 from soc2market.signals.frequency import FREQ_DIR, FrequencyArchive, convert_frequency_csv
 
 YEAR = 2023
-CSV = FREQ_DIR / "2023.csv"
+CSV = FREQ_DIR / "continental_europe_2023.csv"
 OUT = FREQ_DIR / "2023.npz"
 
 

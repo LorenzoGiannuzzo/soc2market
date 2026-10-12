@@ -1,5 +1,5 @@
 """
-Check the sign of the ohmic term in the measurement model of the Huawei EKF.
+Check the sign of the ohmic term in the measurement model of the pre-trained EKF.
 
 In the data, positive current charges the cell (the charge HPPC pulses are positive and the
 voltage jumps up). The frozen EKF predicts the terminal voltage as OCV - R0*I - V1 - V2, which

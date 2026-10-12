@@ -1,6 +1,6 @@
 """
 Market study: the 1 MW / 2 MWh unit operated on the 2023 Italian markets by an operator who sees
-either the true SOC (oracle) or the SOC of one of the published estimators.
+either the true SOC (oracle) or the SOC of one of the pre-trained estimators.
 
 Every day the MILP plans from the SOC the operator believes, within the SOC window of the
 strategy; awards and activations are drawn, and the day is executed second by second on the
@@ -83,7 +83,7 @@ def year_blocks():
     return blocks
 
 #Lorenzo Giannuzzo: technical window the oracle plans on (the plant itself only stops at 0 and 100%),
-# and the window of the fixed industrial margin, the default of the published MILP
+# and the window of the fixed industrial margin, the default of the original MILP
 TECHNICAL_WINDOW = (0.05, 0.95)
 FIXED_WINDOW = (0.10, 0.90)
 MARGIN_QUANTILE = 0.95

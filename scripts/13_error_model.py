@@ -1,5 +1,5 @@
 """
-Error model of the published SOC estimators on the reference duty cycles.
+Error model of the pre-trained SOC estimators on the reference duty cycles.
 
 For every estimator the signed error (estimate minus true SOC, in percentage points) is
 summarised by true-SOC band and by hourly operating regime, its persistence is measured as

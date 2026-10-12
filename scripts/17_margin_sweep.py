@@ -1,6 +1,6 @@
 """
 Margin sweep: net revenue of the unit as a function of a symmetric SOC margin, for the true SOC
-and for a subset of the published estimators, over the whole of 2023 (52 blocks of seven days,
+and for a subset of the pre-trained estimators, over the whole of 2023 (52 blocks of seven days,
 chronological MSD, REPLICATES draws), followed by the penalty sensitivity of 16_market_sensitivity.py.
 
 For every penalty factor the script reports the margin that maximises the mean net revenue of each

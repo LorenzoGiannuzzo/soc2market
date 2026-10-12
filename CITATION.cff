@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "soc2market: market value of state-of-charge estimation error for a battery providing reserves"
+version: 1.0.0
+date-released: 2026-10-12
+license: MIT
+repository-code: "https://github.com/<user>/soc2market"
+keywords:
+  - battery energy storage
+  - state-of-charge estimation
+  - ancillary services
+  - frequency containment reserve
+  - electricity markets
+  - Kalman filtering
+authors:
+  - family-names: Giannuzzo
+    given-names: Lorenzo
+    email: lorenzo.giannuzzo@polito.it
+    affiliation: "Energy Center Lab, Politecnico di Torino"
+  - family-names: Schiera
+    given-names: Daniele Salvatore
+    email: daniele.schiera@polito.it
+    affiliation: "Energy Center Lab, Politecnico di Torino"
+  - family-names: Minuto
+    given-names: Francesco Demetrio
+    email: francesco.minuto@polito.it
+    affiliation: "Energy Center Lab, Politecnico di Torino"
+  - family-names: Lanzini
+    given-names: Andrea
+    email: andrea.lanzini@polito.it
+    affiliation: "Energy Center Lab, Politecnico di Torino"
+preferred-citation:
+  type: conference-paper
+  title: "Accuracy Is Not Real Revenue: Cost of State-of-Charge Estimation Error for a Battery Providing Reserves in Italy"
+  collection-title: "2027 IEEE Power & Energy Society General Meeting (PESGM)"
+  year: 2027
+  notes: "Submitted"
+  authors:
+    - family-names: Giannuzzo
+      given-names: Lorenzo
+    - family-names: Schiera
+      given-names: Daniele Salvatore
+    - family-names: Minuto
+      given-names: Francesco Demetrio
+    - family-names: Lanzini
+      given-names: Andrea

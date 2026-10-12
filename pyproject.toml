@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soc2market"
+version = "1.0.0"
+description = "Market value of state-of-charge estimation error for a battery providing reserves on the Italian markets"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [
+    { name = "Lorenzo Giannuzzo", email = "lorenzo.giannuzzo@polito.it" },
+    { name = "Daniele Salvatore Schiera", email = "daniele.schiera@polito.it" },
+    { name = "Francesco Demetrio Minuto", email = "francesco.minuto@polito.it" },
+    { name = "Andrea Lanzini", email = "andrea.lanzini@polito.it" },
+]
+keywords = ["battery energy storage", "state of charge", "ancillary services", "electricity markets", "MILP"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "openpyxl>=3.1",
+    "pulp>=2.7",
+]
+
+[project.optional-dependencies]
+# MILP solver used by the frozen market code (a valid Gurobi license is required)
+solver = ["gurobipy>=11"]
+# Library versions with which the pre-trained estimators were saved; needed only by the
+# scripts that run the frozen estimator code (03 to 07, 10 to 12 and 20)
+estimators = [
+    "tensorflow==2.18.0",
+    "keras==3.7.0",
+    "torch==2.5.0",
+    "lightning==2.6.1",
+    "pytorch_forecasting==1.1.1",
+    "catboost==1.2.8",
+    "scikit_learn==1.4.2",
+    "joblib==1.3.2",
+]
+dev = ["pytest>=8"]
+
+[project.urls]
+Repository = "https://github.com/<user>/soc2market"
+
+[tool.setuptools.packages.find]
+where = ["src"]

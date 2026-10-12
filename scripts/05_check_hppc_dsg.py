@@ -10,7 +10,7 @@ wrongly; if they agree, the problem is in the plant.
 import numpy as np
 import pandas as pd
 
-from soc2market.estimation import huawei_bridge as hb
+from soc2market.estimation import estimator_bridge as eb
 
 FILES = ("HPPC_25degree_DSG.xlsx", "HPPC_25degree_CHG.xlsx")
 CAPACITY_AH = 280.0
@@ -18,7 +18,7 @@ CAPACITY_AH = 280.0
 
 def main():
     for name in FILES:
-        df = pd.read_excel(hb.HUAWEI_WORKDIR / "data" / name, skiprows=2).drop(index=0)
+        df = pd.read_excel(eb.ESTIMATOR_WORKDIR / "data" / name, skiprows=2).drop(index=0)
         print(f"\n=== {name} ===")
         print("columns:", list(df.columns))
         print(df.head(3).to_string())

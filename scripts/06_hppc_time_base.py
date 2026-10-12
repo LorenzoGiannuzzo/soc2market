@@ -14,7 +14,7 @@ logging rate) or depends on the phase of the test.
 import numpy as np
 import pandas as pd
 
-from soc2market.estimation import huawei_bridge as hb
+from soc2market.estimation import estimator_bridge as eb
 
 FILES = ("HPPC_25degree_DSG.xlsx", "HPPC_25degree_CHG.xlsx")
 CAPACITY_AH = 280.0
@@ -23,7 +23,7 @@ BANDS = ((5.0, 100.0), (100.0, 250.0), (250.0, 1000.0))
 
 def main():
     for name in FILES:
-        df = pd.read_excel(hb.HUAWEI_WORKDIR / "data" / name, skiprows=2).drop(index=0)
+        df = pd.read_excel(eb.ESTIMATOR_WORKDIR / "data" / name, skiprows=2).drop(index=0)
         i = pd.to_numeric(df["Current_inv(A)"], errors="coerce").to_numpy(float)
         soc = pd.to_numeric(df["SOC_true(%)"], errors="coerce").to_numpy(float)
         #Lorenzo Giannuzzo: the SOC change between row k and k+1 is produced by the current of row k+1

@@ -1,9 +1,9 @@
 """
-Run the published SOC estimators in closed loop on the reference duty cycles.
+Run the pre-trained SOC estimators in closed loop on the reference duty cycles.
 
 Each representative week is concatenated into one continuous series, so that the state of the
 EKF carries from one day to the next as in operation, and every estimator is applied with the
-published settings (EKF parameters, current denoising, start from the true SOC at the beginning
+original settings (EKF parameters, current denoising, start from the true SOC at the beginning
 of the week). One file per week and estimator is written to paths.LOOP_DIR (folder of the MSD mode
 set in paths.py); existing files are skipped, so an interrupted run resumes where it stopped.
 """
@@ -14,12 +14,12 @@ import numpy as np
 import pandas as pd
 
 from soc2market import paths
-from soc2market.estimation import huawei_bridge as hb
+from soc2market.estimation import estimator_bridge as eb
 
 DUTY_DIR = paths.DUTY_DIR
 OUT_DIR = paths.LOOP_DIR
 WEEKS = ("winter", "spring", "summer", "autumn")
-#Lorenzo Giannuzzo: "EKF" is the filter alone; the others are EKF + model, as published
+#Lorenzo Giannuzzo: "EKF" is the filter alone; the others are EKF + model, as in the original pipeline
 MODELS = ("EKF", "ANN", "CNN", "LSTM", "CatBoost", "TFT", "Ensemble")
 #Lorenzo Giannuzzo: quick check before the full run (a few minutes instead of three hours)
 QUICK = False
@@ -66,11 +66,11 @@ def main():
             else:
                 t0 = time.perf_counter()
                 if ekf_out is None:
-                    ekf_out = hb.run_ekf(table.copy(), week)
+                    ekf_out = eb.run_ekf(table.copy(), week)
                 if model == "EKF":
                     soc_hat = ekf_out["SOC_Calc"].to_numpy(float)
                 else:
-                    soc_hat = hb.run_model(ekf_out.copy(), model)["Predicted_SOC"].to_numpy(float)
+                    soc_hat = eb.run_model(ekf_out.copy(), model)["Predicted_SOC"].to_numpy(float)
                 seconds = time.perf_counter() - t0
                 np.savez(out_file, soc_hat=soc_hat.astype(np.float64), soc_true=soc_true.astype(np.float64),
                          day_index=day_index, seconds=seconds)

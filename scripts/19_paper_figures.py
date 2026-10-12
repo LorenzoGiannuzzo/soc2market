@@ -1,13 +1,13 @@
 """
 Figures of the PES GM 2027 paper, from the results of the chronological MSD run.
 
-    fig_error_vs_soc       signed estimation error against the true SOC (median and 5th to 95th
-                           percentile per 10-point band), one panel per published estimator
-    fig_loss_vs_metrics    annual loss against the oracle of the naive strategy (no margin) against
+    fig_error_vs_soc       (Fig. 1) signed estimation error against the true SOC (median and 5th to 95th
+                           percentile per 10-point band), one panel per pre-trained estimator
+    fig_loss_vs_metrics    (Fig. 3) annual loss against the oracle of the naive strategy (no margin) against
                            the RMSE and the MAE of the closed-loop error, with one standard error
-    fig_margin_sweep       net revenue change against the oracle without margin as a function of the
+    fig_margin_sweep       (Fig. 2) net revenue change against the oracle without margin as a function of the
                            symmetric SOC margin, for the mildest and the most severe penalty factor
-    fig_margin_mechanism   for the true SOC: energy revenue given up and penalties plus forfeited
+    fig_margin_mechanism   (Fig. 4) for the true SOC: energy revenue given up and penalties plus forfeited
                            capacity avoided by the margin, for the same two penalty factors
 
 Single-column figures are 3.5 in wide and double-column figures 7.16 in, as in the IEEE template.

@@ -1,5 +1,5 @@
 """
-Identify the plant parameters (OCV branches and two-RC tables) from the Huawei cell data,
+Identify the plant parameters (OCV branches and two-RC tables) from the laboratory data of the cell,
 write them to data/private/plant/ and draw a diagnostic figure in results/plant/.
 """
 

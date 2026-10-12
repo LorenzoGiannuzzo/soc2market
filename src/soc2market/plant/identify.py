@@ -1,5 +1,5 @@
 """
-Identification of the plant parameters from the Huawei cell data.
+Identification of the plant parameters from the laboratory data of the cell.
 
 OCV: the charge and discharge branches of Cha_Dis_OCV_SOC_Data.xlsx, put on a common SOC grid.
 RC branches: the pulse segmentation and the R0 estimate of the frozen HPPC modules are reused
@@ -25,7 +25,7 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import least_squares
 
-from soc2market.estimation import huawei_bridge as hb
+from soc2market.estimation import estimator_bridge as eb
 from soc2market.plant.cell import PLANT_DATA_DIR, CellParams, CellState, simulate
 
 #Lorenzo Giannuzzo: a relaxation fitted worse than this (RMS, volts) is reported and replaced
@@ -134,7 +134,7 @@ def hppc_time_step(step_s, current_a, soc_pct, capacity_ah=280.0, tol=TIME_BASE_
 
 def read_hppc_workbook(name):
     """Read an HPPC workbook as the frozen modules do, with a verified time base."""
-    df = pd.read_excel(hb.HUAWEI_WORKDIR / "data" / name, skiprows=2).drop(index=0)
+    df = pd.read_excel(eb.ESTIMATOR_WORKDIR / "data" / name, skiprows=2).drop(index=0)
     out = pd.DataFrame({
         "step": pd.to_numeric(df["Step(s)"], errors="coerce"),
         "i": pd.to_numeric(df["Current_inv(A)"], errors="coerce"),
@@ -202,17 +202,17 @@ def run_identification(out_dir=PLANT_DATA_DIR):
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     #Lorenzo Giannuzzo: the frozen HPPC modules read their workbooks through relative paths
-    if str(hb.SOC_CODE_DIR) not in sys.path:
-        sys.path.insert(0, str(hb.SOC_CODE_DIR))
+    if str(eb.SOC_CODE_DIR) not in sys.path:
+        sys.path.insert(0, str(eb.SOC_CODE_DIR))
     from RC_model_CHG_module import HPPC_CHG
     from RC_model_DCH_module import HPPC_DSG
 
-    ocv = load_ocv_branches(hb.HUAWEI_WORKDIR / "data" / "Cha_Dis_OCV_SOC_Data.xlsx")
+    ocv = load_ocv_branches(eb.ESTIMATOR_WORKDIR / "data" / "Cha_Dis_OCV_SOC_Data.xlsx")
     ocv.to_csv(out_dir / "ocv.csv", index=False)
 
     tables = {}
     workbooks = {"chg": "HPPC_25degree_CHG.xlsx", "dch": "HPPC_25degree_DSG.xlsx"}
-    with hb.huawei_cwd():
+    with eb.estimator_cwd():
         for name, cls, is_charge in (("chg", HPPC_CHG, True), ("dch", HPPC_DSG, False)):
             _, dt_s, source = read_hppc_workbook(workbooks[name])
             print(f"{workbooks[name]}: time step {dt_s:.4f} s ({source})")

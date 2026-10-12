@@ -60,7 +60,7 @@ def _quantise(x, resolution):
 def measure(result, spec, rng):
     """
     Turn a plant SimulationResult into the table the estimators read, with the column names
-    of the Huawei data: Current_inv (A, positive charging), Voltage (V), Temp (C) and the
+    of the laboratory data: Current_inv (A, positive charging), Voltage (V), Temp (C) and the
     true SOC in percent (SOC_true), which the estimators never see as an input.
     """
     n = result.current_a.size

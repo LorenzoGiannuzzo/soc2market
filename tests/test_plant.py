@@ -1,6 +1,6 @@
 """
 Unit tests of the battery plant. They use synthetic parameter tables, so they run on any
-machine and do not need the private Huawei data.
+machine and do not need the private laboratory data.
 """
 
 import numpy as np

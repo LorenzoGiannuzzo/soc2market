@@ -11,11 +11,11 @@ scenario S4 with those of the duty cycles, and lists the instants of the largest
 import numpy as np
 import pandas as pd
 
-from soc2market.estimation import huawei_bridge as hb
+from soc2market.estimation import estimator_bridge as eb
 
-DUTY_DIR = hb.REPO_ROOT / "results" / "duty_cycles"
-LOOP_DIR = hb.REPO_ROOT / "results" / "closed_loop"
-S4 = hb.REPO_ROOT / "data" / "private" / "soc_regression" / "S4_DAY1to8.xlsx"
+DUTY_DIR = eb.REPO_ROOT / "results" / "duty_cycles"
+LOOP_DIR = eb.REPO_ROOT / "results" / "closed_loop"
+S4 = eb.REPO_ROOT / "data" / "private" / "soc_regression" / "S4_DAY1to8.xlsx"
 
 
 def measurement_stats(label, current, voltage):
@@ -35,7 +35,7 @@ def measurement_stats(label, current, voltage):
 
 
 def main():
-    s4 = hb.load_scenario(S4)
+    s4 = eb.load_scenario(S4)
     measurement_stats("S4 laboratory scenario (training-like)", s4["Current_inv"].to_numpy(float), s4["Voltage"].to_numpy(float))
 
     #Lorenzo Giannuzzo: the winter week of the duty cycles, as fed to the estimators

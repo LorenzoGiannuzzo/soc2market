@@ -10,13 +10,13 @@ hysteresis rate, which the HPPC tests cannot identify, is swept and the best val
 import numpy as np
 import pandas as pd
 
-from soc2market.estimation import huawei_bridge as hb
+from soc2market.estimation import estimator_bridge as eb
 from soc2market.figures.style import legend_top, plt, save
 from soc2market.plant.cell import REPO_ROOT, CellParams, CellState, simulate
 from soc2market.plant.identify import read_hppc_workbook
 
 FIG_DIR = REPO_ROOT / "results" / "plant"
-SCENARIO = hb.REPO_ROOT / "data" / "private" / "soc_regression" / "S4_DAY1to8.xlsx"
+SCENARIO = eb.REPO_ROOT / "data" / "private" / "soc_regression" / "S4_DAY1to8.xlsx"
 GAMMAS = (3.0, 10.0, 30.0, 100.0, 300.0)
 
 #Lorenzo Giannuzzo: during validation the plant must follow the measured current, so the
@@ -59,7 +59,7 @@ def main():
     save(fig, FIG_DIR / "validation_hppc")
 
     #Lorenzo Giannuzzo: dynamic scenario never used for identification, with a sweep of the hysteresis rate
-    scen = hb.load_scenario(SCENARIO)
+    scen = eb.load_scenario(SCENARIO)
     data = pd.DataFrame({"i": scen["Current_inv"].astype(float).to_numpy(),
                          "v": scen["Voltage"].astype(float).to_numpy(),
                          "soc": scen["SOC_true"].astype(float).to_numpy() / 100.0,

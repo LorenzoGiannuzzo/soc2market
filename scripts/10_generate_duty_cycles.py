@@ -15,7 +15,7 @@ import pandas as pd
 
 from soc2market import paths
 from soc2market.bidding import marl_bridge as mb
-from soc2market.estimation import huawei_bridge as hb
+from soc2market.estimation import estimator_bridge as eb
 from soc2market.bidding.schedule import SERVICE_KEYS, solve_day_schedule
 from soc2market.plant.cell import CellParams, CellState
 from soc2market.plant.pack import PackSpec
@@ -47,7 +47,7 @@ def main():
     params = CellParams.from_dir()
     #Lorenzo Giannuzzo: measurement chain matched to the laboratory record the estimators were
     # trained on (resolution 0.1 mV / 0.1 mA, noise estimated on scenario S4, no offset or gain error)
-    reference = hb.load_scenario(hb.REPO_ROOT / "data" / "private" / "soc_regression" / "S4_DAY1to8.xlsx")
+    reference = eb.load_scenario(eb.REPO_ROOT / "data" / "private" / "soc_regression" / "S4_DAY1to8.xlsx")
     sensors = SensorSpec.matched_to(reference)
     print(f"sensor chain: current noise {1e3 * sensors.current_noise_a:.3f} mA, voltage noise "
           f"{1e3 * sensors.voltage_noise_v:.4f} mV, resolution 0.1 mA / 0.1 mV")

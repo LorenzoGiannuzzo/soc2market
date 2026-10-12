@@ -3,7 +3,7 @@ Equivalent-circuit plant of one LFP cell, used as the "true" battery of the simu
 
 States: true SOC, the voltages of two RC branches, a dynamic hysteresis state h in [-1, 1]
 (-1 on the discharge OCV branch, +1 on the charge branch) and the cell temperature.
-Sign convention as in the Huawei data: positive current charges the cell.
+Sign convention as in the laboratory data: positive current charges the cell.
 
     V = OCV_mid(SOC) + h * OCV_half(SOC) + R0 * I + V1 + V2 + V3
     SOC' = SOC + eta(I) * I * dt / (3600 * Q)
