@@ -4,35 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9104c4e6-b1c7-473d-905a-1bccf8bfd6f0" name="Changes" comment="Finalizing Huawei repo copy">
-      <change afterPath="$PROJECT_DIR$/scripts/07_check_ekf_sign.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/09_convert_frequency.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/10_generate_duty_cycles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/11_run_estimators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/12_diagnose_estimator_spikes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/13_error_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/14_validate_error_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/15_market_study.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/16_market_sensitivity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/17_margin_sweep.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/18_sweep_diagnostics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/19_paper_figures.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/bidding/schedule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/paths.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/duty_cycle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/execution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/frequency.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/msd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/signals/profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soc2market/simulation/market.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_market.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_msd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/soc_estimators/PROVENANCE.md" beforeDir="false" afterPath="$PROJECT_DIR$/external/soc_estimators/PROVENANCE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/soc2market/plant/cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/soc2market/plant/cell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/soc2market/plant/sensors.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/soc2market/plant/sensors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_plant.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_plant.py" afterDir="false" />
+    <list default="true" id="9104c4e6-b1c7-473d-905a-1bccf8bfd6f0" name="Changes" comment="COmmit and push soc2market for public repository">
+      <change afterPath="$PROJECT_DIR$/docs/methodology.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/reproducibility.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig02_Seasonal_Load_Profiles.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig03_MILP_Operational_Heatmaps.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig04_Typical_Daily_Profiles.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig05_Discounted_Cash_Flow.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig06_BESS_Cost_Sensitivity.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig07_Demand_Archetypes.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig07_Demand_Archetypes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig08_Rolling_Origin_Forecast.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig08_Rolling_Origin_Forecast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig09_SHAP_Summary.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig09_SHAP_Summary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/Fig10_Critical_Week.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rec_pipeline/clustering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rec_pipeline/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rec_pipeline/design.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rec_pipeline/extras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rec_pipeline/forecasting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rec_pipeline/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rec_pipeline/operation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,22 +79,23 @@
     "Python.17_margin_sweep.executor": "Run",
     "Python.18_sweep_diagnostics.executor": "Run",
     "Python.19_paper_figures.executor": "Run",
+    "Python.20_lab_benchmark.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/lorenzo.giannuzzo/PycharmProjects/soc2market/scripts",
+    "last_opened_file_path": "C:/Users/lorenzo.giannuzzo/PycharmProjects/soc2market",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market" />
       <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\scripts" />
       <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\tests" />
       <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\src\soc2market\signals" />
       <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\src\soc2market" />
-      <recent name="C:\Users\lorenzo.giannuzzo\PycharmProjects\soc2market\src\soc2market\simulation" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.19_paper_figures">
+  <component name="RunManager" selected="Python.20_lab_benchmark">
     <configuration name="10_generate_duty_cycles" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="soc2market" />
       <option name="ENV_FILES" value="" />
@@ -300,6 +294,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="20_lab_benchmark" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="soc2market" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/20_lab_benchmark.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_huawei_regression.test_ekf_reproduces_published_soc" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="soc2market" />
       <option name="ENV_FILES" value="" />
@@ -387,6 +403,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.20_lab_benchmark" />
         <item itemvalue="Python.19_paper_figures" />
         <item itemvalue="Python.18_sweep_diagnostics" />
         <item itemvalue="Python.17_margin_sweep" />
@@ -451,7 +468,23 @@
       <option name="project" value="LOCAL" />
       <updated>1791211756022</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="COmmit and push soc2market (maybe first)">
+      <option name="closed" value="true" />
+      <created>1791560124110</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1791560124110</updated>
+    </task>
+    <task id="LOCAL-00006" summary="COmmit and push soc2market for public repository">
+      <option name="closed" value="true" />
+      <created>1791798724710</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1791798724710</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -459,6 +492,8 @@
     <MESSAGE value="Add XXXXX SOC estimator code (frozen copy)" />
     <MESSAGE value="Other stuff" />
     <MESSAGE value="Finalizing Huawei repo copy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalizing Huawei repo copy" />
+    <MESSAGE value="COmmit and push soc2market (maybe first)" />
+    <MESSAGE value="COmmit and push soc2market for public repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="COmmit and push soc2market for public repository" />
   </component>
 </project>
