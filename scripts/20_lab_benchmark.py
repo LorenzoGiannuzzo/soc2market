@@ -67,6 +67,17 @@ def main():
     print("\npooled over all laboratory samples [percentage points]:")
     print(summary[["rmse_pts", "mae_pts", "p95_pts", "max_pts", "bias_pts", "n"]].round(2).to_string())
 
+    #Lorenzo Giannuzzo: the pooled metrics weight every scenario by its number of samples, so the
+    # multi-day profiles dominate them; the mean over scenarios weights every test equally, as the
+    # per-scenario tables of a laboratory benchmark usually do, and the rank shows who wins where
+    per_scen = table.pivot(index="scenario", columns="model", values="rmse_pts")[[m for m in MODELS if pooled[m]]]
+    equal = per_scen.agg(["mean", "median"]).T
+    equal["scenarios_won"] = per_scen.idxmin(axis=1).value_counts().reindex(per_scen.columns).fillna(0).astype(int)
+    equal["samples_share_of_longest_pct"] = 100 * table.groupby("scenario")["n"].max().max() / table.groupby("scenario")["n"].max().sum()
+    equal.to_csv(OUT_DIR / "equal_weight.csv")
+    print("\nRMSE with every scenario weighted equally [percentage points]:")
+    print(equal.round(2).to_string())
+
 
 if __name__ == "__main__":
     main()

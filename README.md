@@ -8,8 +8,8 @@
 
 This repository contains the simulation pipeline behind the paper
 
-> L. Giannuzzo, D. S. Schiera, F. D. Minuto, and A. Lanzini, "Accuracy Is Not Real Revenue: Cost of
-> State-of-Charge Estimation Error for a Battery Providing Reserves in Italy," submitted to the
+> L. Giannuzzo, D. S. Schiera, F. D. Minuto, and A. Lanzini, "Accuracy Is Not All That Matters: Cost
+> of State-of-Charge Estimation Error for Revenue Stacking Batteries in Italy," submitted to the
 > 2027 IEEE Power & Energy Society General Meeting (PESGM).
 
 State-of-Charge (SOC) estimators are developed and ranked on laboratory accuracy metrics, although
@@ -210,7 +210,7 @@ If you use this code, please cite the paper (see also [CITATION.cff](CITATION.cf
 ```bibtex
 @inproceedings{giannuzzo2027accuracy,
   author    = {Giannuzzo, Lorenzo and Schiera, Daniele Salvatore and Minuto, Francesco Demetrio and Lanzini, Andrea},
-  title     = {Accuracy Is Not Real Revenue: Cost of State-of-Charge Estimation Error for a Battery Providing Reserves in Italy},
+  title     = {Accuracy Is Not All That Matters: Cost of State-of-Charge Estimation Error for Revenue Stacking Batteries in Italy},
   booktitle = {2027 IEEE Power \& Energy Society General Meeting (PESGM)},
   year      = {2027},
   note      = {Submitted}
